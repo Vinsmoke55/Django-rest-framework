@@ -9,6 +9,7 @@ router=DefaultRouter()
 router.register('hello-viewset',views.HelloViewset,basename='hello-viewset')
 router.register('profile',views.UserProfileViewset,)
 router.register('login',views.LoginViewSet,basename='login')
+router.register('feed',views.UserProfileFeedViewSet)
 
 urlpatterns=[
 	path('helloview/',views.HelloApiView.as_view()),
